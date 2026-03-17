@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4 Energien</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { background:#EEF2EA; width:100%; overflow-x:hidden; }
+  body { font-family:'Jost','Helvetica Neue',Arial,sans-serif; padding:56px 40px 64px; }
+
+  .label { display:block; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:#5C7A3E; margin-bottom:12px; }
+  .title { font-family:'Cormorant Garamond',Georgia,serif; font-size:36px; font-weight:300; color:#1C2318; line-height:1.15; margin-bottom:14px; }
+  .intro { font-size:14px; color:#4E5848; line-height:1.8; max-width:500px; }
+
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(92,122,62,.15); margin-top:40px; }
+
+  .card { background:#EEF2EA; padding:36px 28px 32px; border-right:1px solid rgba(92,122,62,.15); transition:background .3s; cursor:default; }
+  .card:last-child { border-right:none; }
+  .card:hover { background:#E4EDDC; }
+
+  .nr { font-family:'Cormorant Garamond',Georgia,serif; font-size:44px; font-weight:300; color:rgba(92,122,62,.18); line-height:1; margin-bottom:16px; }
+  .bar { width:28px; height:1px; background:#5C7A3E; margin-bottom:16px; transform:scaleX(0); transform-origin:left; transition:transform .4s ease; }
+  .card:hover .bar { transform:scaleX(1); }
+  .name { font-family:'Cormorant Garamond',Georgia,serif; font-size:22px; font-weight:400; color:#1C2318; margin-bottom:5px; letter-spacing:.02em; }
+  .sub  { font-size:10px; letter-spacing:.15em; text-transform:uppercase; color:#5C7A3E; margin-bottom:15px; }
+  .text { font-size:13px; color:#4E5848; line-height:1.8; }
+
+  .footer-link { margin-top:36px; text-align:right; }
+  .footer-link a { font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:rgba(92,122,62,.6); border-bottom:1px solid rgba(92,122,62,.25); padding-bottom:3px; text-decoration:none; transition:color .2s,border-color .2s; }
+  .footer-link a:hover { color:#5C7A3E; border-color:#5C7A3E; }
+
+  @media(max-width:780px){
+    body { padding:40px 24px 48px; }
+    .grid { grid-template-columns:1fr 1fr; }
+    .card { border-right:none; border-bottom:1px solid rgba(255,255,255,.07); }
+    .card:nth-child(odd) { border-right:1px solid rgba(255,255,255,.07); }
+    .card:nth-child(3), .card:nth-child(4) { border-bottom:none; }
+  }
+  @media(max-width:480px){
+    body { padding:32px 20px 40px; }
+    .title { font-size:28px; }
+    .grid { grid-template-columns:1fr; }
+    .card { border-right:none !important; border-bottom:1px solid rgba(255,255,255,.07); }
+    .card:last-child { border-bottom:none; }
+  }
+</style>
+</head>
+<body>
+
+  <span class="label">Meine Arbeitsweise</span>
+  <h2 class="title">Die 4 Energien<br>meiner Fotografie</h2>
+  <p class="intro">Kein Marketingkonzept — ein innerer Kompass. Ruhe, Verbundenheit, Emotion und Kraft tragen meine Bilder und meine Art, mit Menschen zu arbeiten.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="nr">01</div><div class="bar"></div>
+      <div class="name">Ruhe</div>
+      <div class="sub">Natur · Raum · Atmosphäre</div>
+      <p class="text">Bilder, die atmen dürfen. Natur als Hauptdarsteller — Weite, Licht und Reduktion als Grundstimmung hinter jedem Shooting.</p>
+    </div>
+    <div class="card">
+      <div class="nr">02</div><div class="bar"></div>
+      <div class="name">Verbundenheit</div>
+      <div class="sub">Mensch · Tier · Vertrauen</div>
+      <p class="text">Die leise Stärke echter Beziehungen. Nähe, Blickkontakt, Präsenz — Vertrauen sichtbar machen ohne Inszenierung.</p>
+    </div>
+    <div class="card">
+      <div class="nr">03</div><div class="bar"></div>
+      <div class="name">Emotion</div>
+      <div class="sub">Hochzeiten · Echte Momente</div>
+      <p class="text">Kein Kitsch, keine Perfektion. Ruhige Bildsprache und die Momente, die zwischen den geplanten Bildern entstehen.</p>
+    </div>
+    <div class="card">
+      <div class="nr">04</div><div class="bar"></div>
+      <div class="name">Kraft</div>
+      <div class="sub">Charakter · Mut · Haltung</div>
+      <p class="text">Individualität und der Mut, Dinge anders zu machen. Eine eigene Bildsprache — klar, selbstbewusst, unverwechselbar.</p>
+    </div>
+  </div>
+
+  <div class="footer-link">
+    <a href="https://niklas-schulz-photography.de/vier-energien/" target="_blank">Mehr über meine Philosophie →</a>
+  </div>
+
+</body>
+</html>
